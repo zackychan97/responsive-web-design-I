@@ -521,6 +521,16 @@ footer {
 	padding-right: 190px;
 }
 
+/************** Media Queries Here *********************/
 
 
+        /* 800 px media query */
+@media screen and (max-width: 800px){
+
+}
+
+@media screen and (mad-width: 500px){
+    
+}
+        /* 500 px media query */
 
