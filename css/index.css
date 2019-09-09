@@ -321,7 +321,7 @@ h5 {
 }
 
 .container {
-	width: 880px;
+	width: 100%;
 	/* TB LR */
 	margin: 0 auto;
 }
@@ -330,7 +330,7 @@ h5 {
 
 header {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
 }
 
 header nav {
@@ -358,7 +358,8 @@ header nav a:last-child {
 }
 
 header .logo {
-	margin-top: 25px;
+    margin-top: 25px;
+    width: 25%;
 }
 
 /* cta */
@@ -396,7 +397,8 @@ header .logo {
 .main-content {
 	border-top: 1px solid black;
 	margin-top: 76px;
-	padding-top: 39px;
+    padding-top: 39px;
+    width: 100%;
 }
 
 .main-content .top-content {
@@ -405,16 +407,18 @@ header .logo {
 	justify-content: space-between;
 }
 
+/*
 .main-content .top-content .text-content {
 	width: 410px;
-}
+}*/
 
 .main-content .top-content .text-content:last-child {
 	margin-right: 0;
 }
 
 .main-content .middle-img {
-	margin-top: 45px;
+    margin-top: 45px;
+    width: 100%;
 }
 
 .main-content .bottom-content {
@@ -424,9 +428,10 @@ header .logo {
 	justify-content: space-between;
 }
 
+/*
 .main-content .bottom-content .text-content {
 	width: 275px;
-}
+}*/
 
 .main-content .bottom-content .text-content:last-child {
 	margin-right: 0;
@@ -478,16 +483,16 @@ footer {
 	border: 1px solid black;
 	background: rgb(218, 218, 218);
 	height: 235px;
-	width: 400px;
+	/*width: 400px;*/
 	margin: 20px;
 	padding: 30px;
 }
 
-.middle button {
+/*.middle button {
 	margin-top: 15px;
 	width: 100px;
 	height: 30px;
-}
+}*/
 
 /*.bottom {
   display: flex;
@@ -503,10 +508,10 @@ footer {
 	justify-content: space-between;
 }
 
-.bottom-lists {
+/*.bottom-lists {
 	width: 550px;
 	padding-left: 190px;
-}
+}*/
 
 .bullet-list {
 	list-style-type: square;
@@ -526,11 +531,29 @@ footer {
 
         /* 800 px media query */
 @media screen and (max-width: 800px){
-
-}
-
-@media screen and (mad-width: 500px){
+    #headerImage{
+        display: none;
+    }
+    .cta{
+        justify-content: center;
+    }
+    header{
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+    }
+    .main-content .text-content{
+        margin: 20px;
+    }
     
 }
+
+
+
         /* 500 px media query */
 
+        @media screen and (mad-width: 500px){
+        #headerImage{
+            display: none;
+        }
+        }
