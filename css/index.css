@@ -91,7 +91,8 @@ video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -251,7 +252,8 @@ video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+   
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -334,11 +336,13 @@ header {
 }
 
 header nav {
-	width: 691px;
+
+	width: 80%;
 	margin-top: 35px;
 }
 
 header nav a {
+    
 	margin-right: 65px;
 	font-size: 14px;
 	color: gray;
@@ -531,6 +535,8 @@ footer {
 
         /* 800 px media query */
 @media screen and (max-width: 800px){
+
+
     #headerImage{
         display: none;
     }
@@ -552,8 +558,35 @@ footer {
 
         /* 500 px media query */
 
-        @media screen and (mad-width: 500px){
-        #headerImage{
-            display: none;
+        @media screen and (max-width: 500px) {
+       
+        .container{
+            width: 100%;
         }
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .navbar a {
+            border-top: 1px solid gray;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            margin: 0;
+        }
+       
+        .top-content{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bottom-content{
+            display: flex;
+            flex-direction: column;
+        }
+        
+      
+
         }
